@@ -13,6 +13,7 @@ img {
     width: 100%;
     height: calc(100vh -100px);
     display: flex;
+    flex-wrap: wrap;
 
 
 }
@@ -43,8 +44,16 @@ img {
 }
 
 
-.col-bottom p {
+.col-bottom  {
     color: #ffffff;
-    height: calc(100vh -200px);
+    height: calc(100vh - 200px);
     overflow-y: scroll;
+}
+
+.footer {
+    height: 100px;
+    width: 100%;
+
+    /* debug */
+    background-color: blue;
 }

@@ -37,9 +37,6 @@ ul {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-
-    /* debug */
-    border: 2px solid #ffffff;
 }
 
 .logo {
@@ -117,18 +114,17 @@ h5 {
     height: 100px;
     width: 100%;
     display: flex;
-    justify-content: center;
-
-    /* debug */
-    background-color: #000000;
+    justify-content: space-between;
+    padding: 0 10px;
+    background-color: #282828;
 }
 
 .row-left {
-    width: 30%;
+    width: 25%;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 15px;
+    gap: 10px;
 }
 
 .row-left img {
@@ -139,4 +135,78 @@ h5 {
 .name {
     display: block;
     font-size: x-small;
+}
+
+
+.row-center {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.music i {
+    margin: 0 10px;
+}
+
+.music i:hover {
+    color: #ffffff;
+}
+
+.big:hover {
+    transform: scale(2);
+}
+
+.progress-bar {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin: 0 20px;
+}
+.progress-bar span {
+    margin: 0 10px;
+}
+ .progress, .progress-1 {
+    flex-grow: 1;
+    height: 5px;
+    background-color: #404040;
+    border-radius: 2.5px;
+    position: relative;
+}
+.progress div, .progress-1 div{
+    height: 100%;
+    width: 25%;
+    background-color: #1db954;
+    border-radius: 2.5px;
+}
+
+.row-right {
+    width: 20%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 5px;
+}
+
+
+
+
+/* RESPONSIVE */
+@media screen and (max-width: 1024px){
+    
+}
+
+@media screen and (max-width: 768px) {
+    
+}
+
+@media screen and (max-width: 425px){
+    .col-left {
+        width: 50px;
+    }
+
+    .col-right {
+        width: calc(100% - 50px);
+    }
 }

@@ -44,9 +44,14 @@ ul {
     margin-bottom: 10px;
 }
 
+.logo-1 {
+    display: none;
+}
+
 .library {
     width: 25px;
 }
+
 .menu  {
     margin-left: 15px;
     margin: 15px;
@@ -95,19 +100,96 @@ h5 {
 .col-top {
     height: 100px;
     width: 100%;
-    /* position: fixed; */
-
-
-    /* debug */
-    border: 2px solid #ffffff;
-    background-color: aqua;
+    display: flex;
+    justify-content: flex-end;
 }
 
+.btn-position {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.btn {
+    border: 1px solid #ffffff;
+    padding: 10px;
+    color: #ffffff;
+    border-radius: 20px;
+    font-size: small;
+}
+
+.btn:hover {
+    text-decoration: none;
+    color: #1db954;
+}
 
 .col-bottom  {
     color: #ffffff;
     height: calc(100vh - 200px);
     overflow-y: scroll;
+    background-color: #141922;
+}
+
+.col-bottom h3 {
+    margin: 10px;
+}
+.row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 10px;
+}
+
+.col-music, .col-music-1, .col-music-2,
+.col-music-3, .col-music-4, .col-music-5 {
+    width: calc(100% / 6);
+    padding: 20px;
+    text-align: center;
+}
+
+
+.title-size {
+    font-size: 0.8rem;
+    color: rgb(255, 255, 255, 0.3);
+}
+
+.text-nav-1 {
+    display: flex;
+    justify-content: center;
+    color: rgb(255, 255, 255, 0.3);
+    margin: 10px 0;
+    flex-wrap: wrap;
+}
+
+.text-nav-1 li  {
+    font-size: small;
+    padding: 0 10px;
+}
+.click {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.click i {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.subtitle {
+    color: rgb(255, 255, 255, 0.3);
+    margin: 0 10px;
+}
+
+.row-1 {
+    display: flex;
+}
+
+.circle img {
+    border-radius: 50%;
 }
 
 .footer {
